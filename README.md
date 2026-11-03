@@ -1,6 +1,24 @@
-# RFC 7 — Pipeline Lab
+# RFC 7 — pipeline lab
 
-Run `go run ./cmd/labs pipeline -file README.md -capacity 1`.
+Public, MIT-licensed Go educational lab. Requires Go 1.22+.
+
+```bash
+git clone https://github.com/Sreenivas-Sadhu-Prabhakara/rfc-0007-pipeline-lab.git
+cd rfc-0007-pipeline-lab
+go run ./cmd/labs pipeline -file README.md -capacity 1
+go test -race ./...
+go vet ./...
+```
+
+This repository includes the shared RFC 5–10 lab library and test harness so every command and test runs independently after cloning. Its focus is RFC 7. These are modern educational models, not historical protocol implementations or production banking software.
+
+Source, tests, examples and original validation reports are committed. GitHub Actions is configured; a workflow file alone does not establish a successful remote run. Earlier validation reports record local checks.
+
+## Publication
+
+Published to this public repository on 3 November 2026. Browser hosting is separate; no live Go backend is claimed. Historical pre-publication remarks in included reports refer to the earlier ZIP delivery.
+
+## Shared lab guide
 
 # RFC Go Labs 5–10
 
